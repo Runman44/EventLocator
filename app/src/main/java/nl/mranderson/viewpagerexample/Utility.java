@@ -44,8 +44,8 @@ public class Utility {
                 loc.setLongitude(0);
             }
             event.setTitle(cursor.getString(1));
-            event.setEndDate(new Date(Long.parseLong(cursor.getString(3))));
-            event.setStartDate(new Date(Long.parseLong(cursor.getString(4))));
+            event.setEndDate(new Date(Long.parseLong(cursor.getString(4))));
+            event.setStartDate(new Date(Long.parseLong(cursor.getString(3))));
             event.setDescription(cursor.getString(2));
 
             event.setLocation(loc);
