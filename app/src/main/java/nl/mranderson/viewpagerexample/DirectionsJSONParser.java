@@ -39,7 +39,7 @@ public class DirectionsJSONParser {
                 /** Traversing all legs */
                 for (int j = 0; j < jLegs.length(); j++) {
                     jSteps = ((JSONObject) jLegs.get(j)).getJSONArray("steps");
-
+                    App.duration = (String) ((JSONObject) ((JSONObject) jLegs.get(j)).get("duration")).get("text");
                     App.distance = (String) ((JSONObject) ((JSONObject) jLegs.get(j)).get("distance")).get("text");
                     /** Traversing all steps */
                     for (int k = 0; k < jSteps.length(); k++) {

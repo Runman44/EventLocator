@@ -7,4 +7,5 @@ import android.app.Application;
  */
 public class App extends Application {
     public static String distance;
+    public static String duration;
 }

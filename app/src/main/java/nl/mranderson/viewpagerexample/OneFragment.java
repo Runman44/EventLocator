@@ -330,8 +330,8 @@ public class OneFragment extends Fragment implements OnMapReadyCallback, GoogleM
             if (finalLine != null) {
                 finalLine.remove();
             }
-            if (App.distance != null) {
-                clickedMarker.setSnippet(App.distance);
+            if (App.distance != null && App.duration != null) {
+                clickedMarker.setSnippet(App.distance + " - " + App.duration);
                 clickedMarker.showInfoWindow();
             }
             finalLine = googleMap.addPolyline(lineOptions);
